@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media (max-width: 1120px) {
+    #home {
+        gap: 15%;
+    }
+    
+}
+
+@media (max-width: 1050px) {
+    #home {
+        gap: 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #home {
+        gap: 5%;
+    }
+}
+
+@media (max-width: 940px) {
+    .svg-ola {
+        margin-left: 80px;
+    }
+
+    blockquote {
+        display: flex;
+        background-image: linear-gradient(160deg, #110CF1, #7DF7FF);
+        color: 050461;
+        margin: 120px auto;
+        height: auto;
+        border: none;
+        width: 600px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    #home {
+        padding: 0px 20px;
+    }
+
+    .divblock {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
