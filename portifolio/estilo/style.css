@@ -177,7 +177,7 @@ article {
 
 #projetos {
     background-image: linear-gradient(to top, #7DF7FF 60%,#110CF1);
-    height: 650px;
+    height: 590px;
 }
 
 .projeto-h1 {
@@ -262,12 +262,12 @@ ul::-webkit-scrollbar-thumb {
 }
 
 #forme {
-    height: 590px;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    flex-wrap: wrap-reverse;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 660px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    column-gap: 40px;
+    justify-content: space-around;
+    align-content: center
 }
 
 #formulario {
@@ -276,16 +276,12 @@ ul::-webkit-scrollbar-thumb {
 }
 
 section.forme {
-    width: 400px;
-    margin: 60px 40px 0px 60px;
-}
-
-article.forme {
-    padding: 0%;
+    min-width: 300px;
 }
 
 .forme {
     text-align: end;
+    padding: 0%;
 }
 
 .h1-forme {
@@ -335,4 +331,56 @@ input.prencher {
     font-weight: bold;
     border: none;
     border-bottom: 4px solid #5C23FF;
+}
+
+/* media screen */
+
+
+@media (max-width: 1100px) {
+    section.forme {
+        justify-self: end;
+    }
+
+    article.forme {
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 790px) {
+    #forme {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.forme {
+        align-self: flex-start;
+    }
+
+    article.forme {
+        width: 365px;
+        text-align: start;
+        padding: 10px 0px;
+    }
+
+    aside.forme {
+        width: 0;
+        display: grid;
+        grid-template-columns: 40px 130px 40px 130px;
+        column-gap: 10px;
+    }
+
+    .conteiner-icon {
+        padding: 0;
+    }
+
+    .dados {
+        text-align: start;
+        padding: 0px;
+    }
+
+    #formulario {
+        width: 322px;
+    }
 }
